@@ -1,0 +1,3 @@
+package cefi;
+
+@license(LGPL);

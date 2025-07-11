@@ -1,0 +1,7 @@
+<config>
+  <interface hosts='adHocAp' address='10.0.1.x' netmask='255.255.255.0'/>
+  <interface hosts='sta[*]' address='10.0.1.x' netmask='255.255.255.0'/>
+  <interface hosts='collisionSniffer' address='10.0.1.x' netmask='255.255.255.0'/>
+  <interface hosts='legacyAp' address='10.0.2.x' netmask='255.255.255.0'/>
+  <interface hosts='legacySta[*]' address='10.0.2.x' netmask='255.255.255.0'/>
+</config>
