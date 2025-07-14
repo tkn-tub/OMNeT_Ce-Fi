@@ -1,4 +1,4 @@
-# Ce-Fi: Fronthaul-delay affected centralized Wi-Fi in OMNeTpp
+# Ce-Fi: Fronthaul-Delay Affected Centralized Wi-Fi in OMNeTpp
 
 ## User Guide
 
