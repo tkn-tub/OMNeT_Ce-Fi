@@ -3,7 +3,7 @@
 ## User Guide
 
 ### Prerequisites
-To use the proposed Ce-Fi solution or to just experiment with a Fronthaul (FH)-affected Wi-Fi system, you need a current installation of [OMNeT++](https://omnetpp.org/). 
+To use the [proposed Ce-Fi](https://www.tkn.tu-berlin.de/bib/schmitz-heinen2025ce-fi/schmitz-heinen2025ce-fi.pdf) solution or to just experiment with a Fronthaul (FH)-affected Wi-Fi system, you need a current installation of [OMNeT++](https://omnetpp.org/) [1]. 
 
 All testing has been performed on OMNeT++ Version 6.1.
 
@@ -70,7 +70,7 @@ The channel access mechanism needs to be the same for each device in the FH-affe
 
 `"standard"` describes the standard 802.11 DCF channel access behavior and is set by default. Yet, to perform parameter studies, it might be helpful to include it as well.
 
-`"okamoto"` sets the channel access mechanism to the proposal by Okamoto *et al.* [1] mechanism, where a combination of timeout and NAV extensions as well as (as an AP) responding SIFS after transmitting an ACK is used.
+`"okamoto"` sets the channel access mechanism to the proposal by Okamoto *et al.* [2] mechanism, where a combination of timeout and NAV extensions as well as (as an AP) responding SIFS after transmitting an ACK is used.
 
 `"cefi"` extends the channel access mechanism by Okamoto *et al.* to include a Forced Transmission Mechanism (FT) to allow for communication even in low uplink scenarios, which are required for the FH-affected AP to piggyback its data after transmitting ACK frames.
 
@@ -106,4 +106,5 @@ At last, there is also a further parameter to configure. The parameter alpha all
 
 
 ## References
-[1] Y. Okamoto, M. Morikura, T. Nishio, K. Yamamoto, F. Nuno, and T. Sugiyama, “Throughput and QoS Improvement of Wireless LAN System Employing Radio Over Fiber,” in 2014 XXXIth URSI General Assembly and Scientific Symposium (URSI GASS), Beijing, China: IEEE, Jul. 2014, pp. 1–4
+[1]  Simon Wolfgang Schmitz-Heinen, Anatolij Zubow, Christos Laskos and Falko Dressler, "Ce-Fi: Centralized Wi-Fi over Packet-Fronthaul," Proceedings of 50th IEEE Conference on Local Computer Networks (LCN 2025), Sydney, Australia, October 2025
+[2] Y. Okamoto, M. Morikura, T. Nishio, K. Yamamoto, F. Nuno, and T. Sugiyama, “Throughput and QoS Improvement of Wireless LAN System Employing Radio Over Fiber,” in 2014 XXXIth URSI General Assembly and Scientific Symposium (URSI GASS), Beijing, China: IEEE, Jul. 2014, pp. 1–4
